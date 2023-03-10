@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --header-height: 38px;
+  --footer-height: 114px;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+#list {
+  list-style-type: square;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: var(--header-height);
+  width: 100%;
+  position: fixed;
+}
+
+#body-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#left-inner-container {
+  width: 15%;
+  float: left;
+}
+
+#mid-inner-container {
+  display: flex;
+  width: 70%;
+  padding-top: var(--header-height);
+  margin: 0;
+  float: left;
+}
+
+#right-inner-container {
+  width: 15%;
+  float: left;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.table-row.header {
+  font-weight: bold;
+  background-color: gray;
+}
+
+.text {
+  width: 33.33%;
+}
+
+.text.name {
+  border-color: gray;
+  border-style: solid;
+  border-width: 2px
+}
+
+.text.population {
+  border-color: gray;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.text.landlocked {
+  border-color: gray;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: var(--footer-height);
+  width: 100%;
+  padding-left: 10px; 
+}
